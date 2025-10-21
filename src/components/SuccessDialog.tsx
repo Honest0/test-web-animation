@@ -138,7 +138,7 @@ export default function SuccessDialog({ isOpen, onClose, message }: SuccessDialo
                   onClick={onClose}
                   className="w-full bg-gradient-to-r from-primary-500 to-primary-600 text-white py-3 px-6 rounded-2xl font-semibold hover:from-primary-600 hover:to-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl"
                 >
-                  Awesome! Let's Go! 🚀
+                  {`Awesome! Let's Go! 🚀`}
                 </button>
               </motion.div>
             </div>
