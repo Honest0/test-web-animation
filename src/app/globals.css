@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 200 25% 97%;
+  --foreground: 220 15% 20%;
+
+  --card: 0 0% 100%;
+  --card-foreground: 220 15% 20%;
+
+  --popover: 0 0% 100%;
+  --popover-foreground: 220 15% 20%;
+
+  --primary: 25 95% 53%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 200 15% 90%;
+  --secondary-foreground: 220 15% 20%;
+
+  --muted: 200 15% 92%;
+  --muted-foreground: 220 10% 50%;
+
+  --accent: 45 100% 55%;
+  --accent-foreground: 220 15% 20%;
+
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 100%;
+
+  --border: 200 20% 88%;
+  --input: 200 20% 88%;
+  --ring: 25 95% 53%;
+
+  --radius: 1rem;
+  
+  /* Animation colors */
+  --dog-primary: 30 85% 55%;
+  --dog-secondary: 35 75% 45%;
+  --dog-accent: 20 90% 65%;
+  --bone-color: 45 15% 95%;
+  --bone-shadow: 45 15% 85%;
+
+  --sidebar-background: 0 0% 98%;
+
+  --sidebar-foreground: 240 5.3% 26.1%;
+
+  --sidebar-primary: 240 5.9% 10%;
+
+  --sidebar-primary-foreground: 0 0% 98%;
+
+  --sidebar-accent: 240 4.8% 95.9%;
+
+  --sidebar-accent-foreground: 240 5.9% 10%;
+
+  --sidebar-border: 220 13% 91%;
+
+  --sidebar-ring: 217.2 91.2% 59.8%;
+}
+
+.dark {
+  --background: 220 20% 12%;
+  --foreground: 200 15% 95%;
+
+  --card: 220 18% 15%;
+  --card-foreground: 200 15% 95%;
+
+  --popover: 220 18% 15%;
+  --popover-foreground: 200 15% 95%;
+
+  --primary: 25 95% 53%;
+  --primary-foreground: 0 0% 100%;
+
+  --secondary: 220 15% 22%;
+  --secondary-foreground: 200 15% 95%;
+
+  --muted: 220 15% 22%;
+  --muted-foreground: 200 10% 65%;
+
+  --accent: 45 100% 55%;
+  --accent-foreground: 0 0% 100%;
+
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 200 15% 95%;
+
+  --border: 220 15% 22%;
+  --input: 220 15% 22%;
+  --ring: 25 95% 53%;
+  
+  --sidebar-background: 240 5.9% 10%;
+  --sidebar-foreground: 240 4.8% 95.9%;
+  --sidebar-primary: 224.3 76.3% 48%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 240 3.7% 15.9%;
+  --sidebar-accent-foreground: 240 4.8% 95.9%;
+  --sidebar-border: 240 3.7% 15.9%;
+  --sidebar-ring: 217.2 91.2% 59.8%;
+  
+  /* Animation colors */
+  --dog-primary: 30 85% 60%;
+  --dog-secondary: 35 75% 50%;
+  --dog-accent: 20 90% 70%;
+  --bone-color: 45 15% 90%;
+  --bone-shadow: 45 15% 75%;
+}
+
+body {
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #7dd3fc;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #38bdf8;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px #0ea5e9, 0 0 0 4px rgba(14, 165, 233, 0.2);
+}
+
+/* Animation utilities */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-glow {
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+  }
+  to {
+    box-shadow: 0 0 30px rgba(14, 165, 233, 0.6);
+  }
+}
+
